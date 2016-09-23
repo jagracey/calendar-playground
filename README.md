@@ -13,4 +13,4 @@ To run this project, you can `npm -g install static-server`, followed by navigat
 
 If you want to dig deep into the code, you will need Node v6. `npm install` will handle the rest. `npm build --release` to build, and `npm start` to run the dev server.
 
-Also note, I started the project using Yeoman's React Static boilerplate (https://github.com/kriasoft/react-static-boilerplate#readme) which is was really heavy on the asset pipeline, but really came with very little to offer in terms of web page implementation.
+NOTE: I started the project using Yeoman's React Static boilerplate (https://github.com/kriasoft/react-static-boilerplate#readme) which is was really heavy on the asset pipeline, but really came with very little to offer in terms of web page implementation.
