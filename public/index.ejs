@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title><%= config.title %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="container"></div>
+    <div id="simpleCounter"></div>
+    <div id="calendar"></div>
+    <script src="<%= bundle %>"></script>
+    <%_ if (!debug && config.trackingID) { _%>
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','<%= config.trackingID %>','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/core.js" integrity="sha256-Sk3sfKjyVntDJ8grhzyNfdd090uQCdL/ZUMagVRpPeo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <%_ } _%>
+
+
+
+    <style>
+      /* TODO: REMOVE THIS, place in more long term file. SASS or LESS too... */
+
+
+      .week > .DayCell {
+        cursor: pointer;
+        color: black;
+      }
+      .week > .DayCell:hover{
+        background: rgba(0, 188, 212, 0.13) !important;
+      }
+      .week > .DayCell:first-child {
+          border-left: 1px solid rgb(205, 205, 205);
+      }
+      .week:last-child {
+          border-bottom: 1px solid rgb(205, 205, 205);
+      }
+
+    </style>
+  </body>
+</html>
